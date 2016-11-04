@@ -6,29 +6,166 @@
     <link rel="stylesheet" type="text/css" href="SVG.css">
   </head>
   <body>
-    <svg viewbox="0 0 1300 600">
+    <!-- <svg viewbox="0 0 1300 600" style="background-color: lightblue"> -->
+    <svg width="100%" viewBox="0 0 1300 600">
+      <rect width="1300" height="600" x="0" y="0" fill="lightskyblue">
+        <animate attributeName="fill" from="lightskyblue" to="#080f19" dur="10s" fill="freeze"/>
+      </rect>
     <!-- circle -->
-    <circle cx="1200" cy="100" r="85" fill="grey"/>
+    <circle cx="1200" cy="80" r="70" fill="grey">
+    <animate id="moon" attributeName="opacity" from="1" to="0" dur="2" fill="freeze" begin="click">
+    </circle>
+
 
       <!-- square house -->
-      <rect x="600" y="400" width="250" height="200" fill="#9C6F3B"/>
+      <rect x="450" y="400" width="250" height="200" fill="#9C6F3B" stroke="white"/>
       <!-- house windows -->
-      <rect x="650" y="450" width="50" height="50" fill="#FAF4ED"/>
-      <rect x="750" y="450" width="50" height="50" fill="#FAF4ED"/>
+      <rect x="500" y="450" width="50" height="50" fill="#FAF4ED">
+        <animate id="ok" attributeName="fill" from="#FAF4ED" to="yellow" dur="1s" begin="click; kk.end"/>
+          <animate id="kk" attributeName="fill" from="yellow" to="#FAF4ED" dur="1s" begin="ok.end"/>
+    </rect>
+      <rect x="600" y="450" width="50" height="50" fill="#FAF4ED">
+        <animate id="ok" attributeName="fill" from="#FAF4ED" to="yellow" dur="1s" begin="click; kk.end"/>
+          <animate id="kk" attributeName="fill" from="yellow" to="#FAF4ED" dur="1s" begin="ok.end"/>
+      </rect>
+      <!-- door -->
+      <rect x="550" y="510" width="50" height="90" fill="#FAF4ED"/>
 
 
-      <!-- tree -->
+      <!-- tree left side -->
       <rect x="115" y="450" width="30" height="150" fill="#6B440C"/>
       <polygon points="130 300 80 350 105 350 55 400 80 400 30 450 230 450 180 400 205 400 155 350 180 350" fill="green"/>
           <!-- tree ornaments-->
-          <circle cx="110" cy="350" r="5" fill="#F20A0A"/>
-          <circle cx="130" cy="360" r="5" fill="#F20A0A"/>
-          <circle cx="150" cy="350" r="5" fill="#F20A0A"/>
-          <!-- tree ornaments -->
-          <circle cx="90" cy="400" r="5" fill="#F20A0A"/>
-          <circle cx="115" cy="410" r="5" fill="#F20A0A"/>
-          <circle cx="140" cy="410" r="5" fill="#F20A0A"/>
-          <circle cx="165" cy="400" r="5" fill="#F20A0A"/>
+          <circle cx="110" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+            <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+            <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+          </circle>
+          <circle cx="130" cy="360" r="5" fill="#F20A0A" fill-opacity="1">
+            <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+            <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+        </circle>
+          <circle cx="150" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+            <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+            <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+          </circle>
+          <!-- lower ornaments -->
+          <circle cx="90" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+            <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+            <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+          </circle>
+          <circle cx="115" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+            <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+            <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+          </circle>
+          <circle cx="140" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+            <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+            <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+          </circle>
+          <circle cx="165" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+            <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+            <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+          </circle>
+      <!-- tree left side II -->
+          <rect x="315" y="450" width="30" height="150" fill="#6B440C"/>
+          <polygon points="330 300 280 350 305 350 255 400 280 400 230 450 430 450 380 400 405 400 355 350 380 350" fill="green"/>
+              <!-- tree ornaments-->
+              <circle cx="310" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+                <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+              </circle>
+              <circle cx="330" cy="360" r="5" fill="#F20A0A" fill-opacity="1">
+                <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+              </circle>
+              <circle cx="350" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+                <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+              </circle>
+              <!-- lower ornaments -->
+              <circle cx="290" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+              <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+              <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+            </circle>
+              <circle cx="315" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+                <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+              </circle>
+              <circle cx="340" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+                <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+              </circle>
+              <circle cx="365" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+                <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+              </circle>
+       <!-- tree right side -->
+                  <rect x="950" y="450" width="30" height="150" fill="#6B440C"/>
+                  <polygon points="965 300 915 350 940 350 890 400 915 400 865 450 1065 450 1015 400 1040 400 990 350 1015 350" fill="green"/>
+                      <!-- tree ornaments-->
+                      <circle cx="945" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+                        <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                        <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                      </circle>
+                      <circle cx="965" cy="360" r="5" fill="#F20A0A" fill-opacity="1">
+                        <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                        <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                      </circle>
+                      <circle cx="985" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+                        <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                        <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                      </circle>
+                      <!-- lower ornaments -->
+                      <circle cx="925" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+                        <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                        <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                      </circle>
+                      <circle cx="950" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+                        <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                        <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                      </circle>
+                      <circle cx="975" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+                        <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                        <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                      </circle>
+                      <circle cx="1000" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+                        <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                        <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                      </circle>
+       <!-- tree right side II-->
+                   <rect x="1150" y="450" width="30" height="150" fill="#6B440C"/>
+                   <polygon points="1165 300 1115 350 1140 350 1090 400 1115 400 1065 450 1265 450 1215 400 1240 400 1190 350 1215 350" fill="green"/>
+                       <!-- tree ornaments-->
+                       <circle cx="1145" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+                         <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                         <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                       </circle>
+                       <circle cx="1165" cy="360" r="5" fill="#F20A0A" fill-opacity="1">
+                         <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                         <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                       </circle>
+                       <circle cx="1185" cy="350" r="5" fill="#F20A0A" fill-opacity="1">
+                         <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                         <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                       </circle>
+                       <!-- lower ornaments -->
+                       <circle cx="1125" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+                         <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                         <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                       </circle>
+                       <circle cx="1150" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+                         <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                         <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                       </circle>
+                       <circle cx="1175" cy="410" r="5" fill="#F20A0A" fill-opacity="1">
+                         <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                         <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                       </circle>
+                       <circle cx="1200" cy="400" r="5" fill="#F20A0A" fill-opacity="1">
+                         <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
+                         <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
+                       </circle>
     <!-- page content -->
+    <p>It is Christmas morning!! The lights are beautiful! The christmas tree lights flicker! Just wait and it will get darker. Click on the moon and it will turn transparent. You can also clikck on the windows of the house and the lights will go on and off.</p>
+
   </body>
 </html>

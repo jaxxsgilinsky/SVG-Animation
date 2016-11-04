@@ -1,3 +1,5 @@
-body {
-    background-color: #080f19;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
 }
