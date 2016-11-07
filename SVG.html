@@ -11,14 +11,20 @@
       <rect width="1300" height="600" x="0" y="0" fill="lightskyblue">
         <animate attributeName="fill" from="lightskyblue" to="#080f19" dur="10s" fill="freeze"/>
       </rect>
+
+
     <!-- circle -->
-    <circle cx="1200" cy="80" r="70" fill="grey">
-    <animate id="moon" attributeName="opacity" from="1" to="0" dur="2" fill="freeze" begin="click">
+    <circle cx="1200" cy="80" r="70" fill="yellow">
+    <animate attributeName="fill" from="yellow" to="grey" dur="10s" fill="freeze">
     </circle>
 
 
       <!-- square house -->
       <rect x="450" y="400" width="250" height="200" fill="#9C6F3B" stroke="white"/>
+      <!-- roof -->
+      <polygon points="450 400, 575 300, 700 400" fill="#FAF4ED">
+      <animate attributeName="fill" from="#FAF4ED" to="grey" dur="2s" fill="freeze" begin="click">
+      </polygon>
       <!-- house windows -->
       <rect x="500" y="450" width="50" height="50" fill="#FAF4ED">
         <animate id="ok" attributeName="fill" from="#FAF4ED" to="yellow" dur="1s" begin="click; kk.end"/>
@@ -30,6 +36,9 @@
       </rect>
       <!-- door -->
       <rect x="550" y="510" width="50" height="90" fill="#FAF4ED"/>
+      <circle cx="560" cy="545" r="8" fill="grey">
+        <animate id="moon" attributeName="opacity" from="1" to="0" dur="2" fill="freeze" begin="click">
+      </circle>
 
 
       <!-- tree left side -->
@@ -164,8 +173,85 @@
                          <animate id="lights" attributeName="fill-opacity" from="0" to="1" dur="2s" begin="2s; flicker.end"/>
                          <animate id="flicker" attributeName="fill-opacity" from="1" to="0" dur="2s" begin="2s; lights.end"/>
                        </circle>
+
+                       <!--snow-->
+                       <circle cx="100" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="4s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="150" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="8s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="200" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="2s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="250" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="10s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="300" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="3s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="350" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="5s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="400" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="3s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="450" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="8s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="500" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="4s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="550" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="6s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="600" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="10s" repeatCount="indefinite"/>
+                       </circle>
+                       <!--snow II-->
+                       <circle cx="650" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="1s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="700" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="6s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="750" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="2s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="800" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="5s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="850" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="3s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="900" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="4s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="950" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="6s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="1000" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="3s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="1050" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="5s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="1100" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="2s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="1150" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="6s" repeatCount="indefinite"/>
+                       </circle>
+                       <circle cx="1200" cy="0" r="10" fill="white">
+                         <animate attributeName="cy" from="0" to="600" dur="1s" repeatCount="indefinite"/>
+                       </circle>
+
+
+
+                  </svg>
     <!-- page content -->
-    <p>It is Christmas morning!! The lights are beautiful! The christmas tree lights flicker! Just wait and it will get darker. Click on the moon and it will turn transparent. You can also clikck on the windows of the house and the lights will go on and off.</p>
+    <h1>Christmas Day</h1>
+    <p>It is Christmas morning!! The lights are beautiful! The christmas tree lights flicker! Just wait night will fall. Click on the doorknob and it will turn transparent. You can also click on the windows of the house and the lights will go on and off. Click the roof and it will change colors!</p>
 
   </body>
 </html>
